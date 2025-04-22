@@ -82,3 +82,35 @@ for(i=0; i<numeri.length; i++){
 console.log("La somma è: ", somma);
 
 
+/* 
+🔁 2. Conta quante volte appare un valore
+Obiettivo: Contare quante volte appare il valore "rosso" in un array di stringhe.
+const colori = ["rosso", "blu", "rosso", "verde", "rosso"];
+// Output atteso: 3
+*/
+
+const colori = ["rosso", "blu", "rosso", "verde", "rosso"];
+let target = "rosso";
+let cont = 0; 
+for(i=0; i<colori.length; i++){
+    if (target === colori[i])
+        cont++; 
+}
+
+console.log("Il colore rosso è presente ", cont, " volte.");
+
+/* 
+🔄 3. Inverti un array
+Obiettivo: Creare un nuovo array con gli elementi in ordine inverso (senza usare .reverse()).
+const input = [1, 2, 3, 4];
+// Output atteso: [4, 3, 2, 1]
+*/
+const input = [1, 2, 3, 4];
+let reverse = [];
+let y=0; 
+for(i=input.length-1; i>=0; i--){
+    reverse[y] = input[i]; 
+    y++;
+}
+
+console.log("Output: ", reverse);
